@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="Author" content="Dakota Moats">
+	<title>Helicopter Mom's Application</title>
+</head>
+
+<body>
+
+  <img id="background" src="images/background.jpg">
+  <div class="header">
+    <h1 id="title">Are you a Helicopter Mom?</h1>
+    <p id="description">Fill out the preceding form to figure out if you should back off of your children. <br> <small>Please note: this is satire. I love my mom.</small></p>
+  </div>
+
+<div class="blur">
+  <div class="container">
+  <form id="survey-form">
+  	
+
+  	<h2>Form</h2>
+    <div class="contactinfo">
+      <div>
+    <label for="name" id="name-label">First Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Karen" required>
+      </div>
+      <br>
+      <div>
+      <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="btchymom@imakaren.com" required>
+    </div>
+    </div>
+      <br>
+
+  	<label for="appts">Do you make appointments for your adult children?</label><br>
+    <div class="apptadltchild">
+  	<select id="dropdown">
+  		<option value="Yes">Yes</option>
+  		<option value="No">No</option>
+  	</select>
+    </div>
+  	<br>
+
+    <label for="scale">How bitchy are you on a scale of 1 to 10?</label><br>
+    <input type="range" min="1" max="10" value="5" id="scale" name="">
+    <br>
+
+    <label for="backoff" id="number-label">How many times were you told to back off? 1-100</label><br>
+    <input type="number" placeholder="50" id="number" min="1" max="100" name="backoff"><br>
+
+  	<label for="prsnloffense">Do you take personal offense when someone wrongs your child?</label><br>
+  	<select id="prsnloffense">
+  		<option value="Yes">Yes</option>
+  		<option value="No">No</option>
+  	</select>
+    <br>
+
+    <p>Who all have you yelled at for your child?</p>
+    <input type="checkbox" id="spouse" name="yelledat" value="spouse">
+    <label for="spouse">Spouse</label><br>
+    <input type="checkbox" id="boss" name="yelledat" value="boss">
+    <label for="boss">Boss</label><br>
+    <input type="checkbox" id="kidsboss" name="yelledat" value="kidsboss">
+    <label for="kidsboss">Kids Boss</label><br>
+    <input type="checkbox" id="teacher" name="yelledat" value="teacher">
+    <label for="teacher">Teacher</label>
+
+    <p>Which is the most likely to happen after an argument?</p>
+    <input type="radio" id="lngleter" name="argument" value="letter">
+    <label for="lngleter">Written obscenly long letter to child?</label><br>
+    <input type="radio" id="letemgo" name="argument" value="letemgo">
+    <label for="letemgo">Let them alone?</label><br>
+    <input type="radio" id="madelunch" name="argument" value="lunch">
+    <label for="madelunch">Made them lunch?</label><br>
+    <input type="radio" id="itsok" name="argument" value="itsok">
+    <label for="itsok">Told them it's okay, you're wrong?</label>
+    <br>
+
+  <div class="addcomment">
+    <label for="comments">Additonal Comments?</label>
+    <br>
+    <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+    <br>
+  </div>
+
+
+  <div class="submit">
+    <input type="submit" id="submit" value="Submit">
+  </div>
+
+  </form>
+  </div>
+</div>
+
+
+</body>
+</html>
